@@ -2,7 +2,7 @@
 
 This repository should guide you the way from the installation of Go till advanced topic like memory management and Go routine scheduler and provide you links to public material.
 
-## Start with the Basics (approx. 1 week)
+## Start with the Basics
 
 Lets start with [https://golang.org/](https://golang.org/) and learning the basics.  
 A must have here are 
@@ -21,7 +21,17 @@ Now that you know the basic about Go, it is time to get your hands dirty by writ
 
 You should now be able to write unit/integration/ benchmark test cases, simple function, structs and got familiar with Go Idiomatic.
 
-## First REST service using go-kit
+### Exercise 1: REST API & Client
+
+Go has a powerful standard library, so let's go and check it out.  
+Build a REST API & Client with the standard library [net/http/](https://golang.org/pkg/net/http/)
+
+### Exercise 2: Web App
+
+Go also has a powerful template engine used not only used for Web App but also in [helm](https://helm.sh/).  
+Build a simple Web App with the standard library [html/template/](https://golang.org/pkg/html/template/)
+
+## Go kit - A toolkit for microservices
 
 ### Questions you might encounter after a while
 
