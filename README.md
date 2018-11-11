@@ -31,12 +31,18 @@ Build a REST API & Client and write unit/integration/benchmark test cases using 
 Go also has a powerful template engine used not only for Web Apps but also in projects like [helm](https://helm.sh/).  
 Build a simple Web App with [html/template/](https://golang.org/pkg/html/template/).
 
-## Go kit - A toolkit for microservices
+## Go kit
 
-Checkout [Go + Microservices = Go Kit [I] - Peter Bourgon, Go Kit](https://www.youtube.com/watch?v=NX0sHF8ZZgw)
-Read more about [go-kit FAQ](https://gokit.io/faq/)
+Go kit is a toolkit to create microservices with onion-like-layers, logging, instrumentation, transport, endpoints.
+Therefore it allows the developers to easily switch from REST JSON API to a grpc protobuf API by replacing layers and keep the service layer untouched.
 
-A good starting point are the examples in the repo [https://github.com/go-kit/kit](https://github.com/go-kit/kit)
+A nice teaser to this toolkit is the talk from the creator [Go + Microservices = Go Kit [I] - Peter Bourgon, Go Kit](https://www.youtube.com/watch?v=NX0sHF8ZZgw)
+
+Read more about 
+* [go-kit FAQ](https://gokit.io/faq/)
+* [Clean Architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)
+
+A good starting point for the exercise are the examples in the repo [https://github.com/go-kit/kit](https://github.com/go-kit/kit)
 
 ### Exercise 3: Build REST API using go-kit
 
@@ -50,9 +56,10 @@ Try to refactor the REST API you build in Exercise 1 and reuse your integration 
 
 When to use pointer semantics or value semantics ?  
 How to mock dependencies ?  
-When use of interfaces ?  
-Error 'failed to cast to AddRequest' does not provide me useful information ?  
+When to use of interfaces ?  
+Error 'failed to cast to AddRequest' does not provide any useful information ?  
 What is context used for ?  
 How to organize my go program ?  
-...and many more
+How to write concurrent go code ?
+How to manage channels ?
 
