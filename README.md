@@ -107,7 +107,7 @@ Recommendations - for advanced Gophers:
 * [Concurrency in Go](http://shop.oreilly.com/product/0636920046189.do)
 * [Ultimate Go Programming, Second Edition](https://learning.oreilly.com/library/view/ultimate-go-programming/9780135261651/)  
 
-Read Blogs/Books/Video
-Write Go idiomatic code
-Write a blog about go  
-Hold a talk about go  
+Read Blogs/Books/Video  
+Write Go idiomatic code  
+Write a blog about go    
+Hold a talk about go    
