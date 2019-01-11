@@ -10,7 +10,8 @@ This repository should guide you the way from the installation of Go till advanc
 
 **Course-Requirements**:
 * basic CS knowledge
-* motivated and ambitious
+* practical experience with one serious language
+* self-motivated
 * considering to make Go your profession
 
 **Course-Topics**:
