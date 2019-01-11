@@ -2,7 +2,34 @@
 
 This repository should guide you the way from the installation of Go till advanced topics like memory management and Go routine scheduler and provide you links to public material.
 
-## Start with the Basics
+## Overview
+
+**Self-Study Learn Program**  
+**Duration:** 4 Week  
+**Q/A:** every Wednesday and Sunday  
+
+**Course-Requirements**:
+* basic CS knowledge
+* motivated and ambitious
+* considering to make Go your profession
+
+**Course-Topics**:
+1. Week: start with the basics
+2. Week: microservice with gokit
+3. Week: managing SQL entities
+4. Week: publish/subscribe to message queue
+
+**Tools and Platforms**:
+* Google Hangouts or Skype (for the Q/As)
+* github.com account
+* go:latest
+* docker:latest
+* MS Visual Studio Code:latest with Extensions:
+  * Go,
+  * Docker,
+  * VS Live Share Plugin
+
+## 1. Week: Start with the Basics
 
 Lets start with [https://golang.org/](https://golang.org/) and learn the basics.  
 A must have here are 
