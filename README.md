@@ -21,7 +21,7 @@ This repository should guide you the way from the installation of Go till advanc
 4. Week: publish/subscribe to message queue
 
 **Tools and Platforms**:
-* Google Hangouts or Skype (for the Q/As)
+* [Google Hangouts](https://hangouts.google.com/) or [Skype](skype.com) (for the Q/As)
 * [github.com](github.com) account
 * [go:latest](https://golang.org/dl/)
 * [docker:latest](https://docs.docker.com/)
@@ -38,7 +38,6 @@ This repository should guide you the way from the installation of Go till advanc
 * to write and run unit, integration, benchmark tests
 
 **Path:**
-
 lets start with [https://golang.org/](https://golang.org/) and learn the basics.  
 a must have here are 
 * [Getting Started](https://golang.org/doc/install)
@@ -56,12 +55,12 @@ Now that you know the basics about Go, it is time to get your hands dirty by wri
 
 You should now be able to write unit test cases, simple function, structs and got familiar with Go Idiomatic.
 
-### Exercise 1: REST API & Client
+### (Optional) Exercise 1: REST API & Client
 
 Go has a powerful standard library, so let's go and check out the [net/http/](https://golang.org/pkg/net/http/) package.
 Build a REST API & Client and write unit/integration/benchmark test cases using [https://golang.org/pkg/testing/](https://golang.org/pkg/testing/).
 
-### Exercise 2: Web App
+### (Optional) Exercise 2: Web App
 
 Go also has a powerful template engine used not only for Web Apps but also in projects like [helm](https://helm.sh/).  
 Build a simple Web App with [html/template/](https://golang.org/pkg/html/template/).
