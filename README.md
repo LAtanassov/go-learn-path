@@ -55,22 +55,20 @@ Now that you know the basics about Go, it is time to get your hands dirty by wri
 
 You should now be able to write unit test cases, simple function, structs and got familiar with Go Idiomatic.
 
-### (Optional) Exercise 1: REST API & Client
+### (Optional) Exercise 1.1: REST API & Client
 
 Go has a powerful standard library, so let's go and check out the [net/http/](https://golang.org/pkg/net/http/) package.
-Build a REST API & Client and write unit/integration/benchmark test cases using [https://golang.org/pkg/testing/](https://golang.org/pkg/testing/).
+Build a REST API & Client using the standard library only and write unit/integration/benchmark test cases using [https://golang.org/pkg/testing/](https://golang.org/pkg/testing/) and [https://golang.org/pkg/net/http/httptest/](https://golang.org/pkg/net/http/httptest/).
 
-### (Optional) Exercise 2: Web App
+### (Optional) Exercise 1.2: Web App
 
-Go also has a powerful template engine used not only for Web Apps but also in projects like [helm](https://helm.sh/).  
-Build a simple Web App with [html/template/](https://golang.org/pkg/html/template/).
+Go also has a powerful template engine used not only for Web Apps but also in projects like [helm](https://helm.sh/) and [hugo](https://gohugo.io/). Build a simple Web App or Latex CV generator with [html/template/](https://golang.org/pkg/html/template/). Write unit/integration/benchmark test cases using [https://golang.org/pkg/testing/](https://golang.org/pkg/testing/).
 
-## Go kit
+## 2. Week: Microservice with gokit
 
-Go kit is a toolkit to create microservices with onion-like-layers, logging, instrumentation, transport, endpoints.
-Therefore it allows the developers to easily switch from REST JSON API to a grpc protobuf API by replacing layers and keep the service layer untouched.
+Gokit is a toolkit to create microservices with onion-like-layers: logging, instrumentation, transport, endpoints are layers that wraps the domain service. Therefore it allows developers to easily switch from REST/JSON API to a grpc/protobuf API by adding/replacing transportation layer and keep the service layer untouched.
 
-A nice teaser to this toolkit is the talk from the creator [Go + Microservices = Go Kit [I] - Peter Bourgon, Go Kit](https://www.youtube.com/watch?v=NX0sHF8ZZgw)
+A nice teaser to this toolkit is the talk from the creator [Golang UK Conference 2016 - Peter Bourgon - Go + Microservices = Go Kit](https://www.youtube.com/watch?v=JXEjAwNWays)
 
 Read more about 
 * [go-kit FAQ](https://gokit.io/faq/)
@@ -78,22 +76,38 @@ Read more about
 
 A good starting point for the exercise are the examples in the repo [https://github.com/go-kit/kit](https://github.com/go-kit/kit)
 
-### Exercise 3: Build REST API using go-kit
+### Exercise 2.1: Build REST/JSON API using go-kit
 
-Try to refactor the REST API you build in Exercise 1 and reuse your integration tests to verify that the functionality did not change.
+Choose a domain you know and build a REST/JSON API and REST client. Use the example in [https://github.com/go-kit/kit](https://github.com/go-kit/kit) as a guidline. Implement an InMemoryDatabase (we will replace it later on with a real one). Write unit/integration/benchmark test cases using [https://golang.org/pkg/testing/](https://golang.org/pkg/testing/).
 
-### Exercise 4: Manage your entities with a SQL database
+### (Optional) Exercise 2.2: Add grpc/protobuf transportation layer
 
-### Exercise 5: Consume/Publish events on a message queue
+Implement another transportation layer usign [grpc](https://grpc.io/) and [protobuf](https://developers.google.com). Write unit/integration/benchmark test cases using [https://golang.org/pkg/testing/](https://golang.org/pkg/testing/).
 
-### Questions you might encounter after a while
+## 3. Week: Managing entities with sql
 
-When to use pointer semantics or value semantics ?  
-How to mock dependencies ?  
-When to use of interfaces ?  
-Error 'failed to cast to AddRequest' does not provide any useful information ?  
-What is context used for ?  
-How to organize my go program ?  
-How to write concurrent go code ?
-How to manage channels ?
+Start with reading about [go-database-sql.org](http://go-database-sql.org/), [docs.docker.com/](https://docs.docker.com/) and how to run the <database of your choice> in docker. Read and try out [flywaydb.org/](https://flywaydb.org/) to create version controlled database schemas.
+ 
+ ### Exercise 3.1: Build a database layer and manage your domain entities
+ 
+ Implement a basic CRUD database layer using the <database of your choice>  running in docker. Write unit/integration/benchmark test cases using [https://golang.org/pkg/testing/](https://golang.org/pkg/testing/).
+ 
+ 
+### (Optional) Exercise 3.2: Implement Stress Benchmark Tests
 
+Implement a benchmark test suite and measure your performance bottle necks. How much operation can your service process using a specific hardware setup ?
+
+## 4. Week: Publish/Subscribe on a message queue
+
+TBD
+
+# Where to go from here on
+
+Recommendations - for advanced Gophers:
+* [Concurrency in Go](http://shop.oreilly.com/product/0636920046189.do)
+* [Ultimate Go Programming, Second Edition](https://learning.oreilly.com/library/view/ultimate-go-programming/9780135261651/)  
+
+Read Blogs/Books/Video
+Write Go idiomatic code
+Write a blog about go  
+Hold a talk about go  
