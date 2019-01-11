@@ -22,18 +22,25 @@ This repository should guide you the way from the installation of Go till advanc
 
 **Tools and Platforms**:
 * Google Hangouts or Skype (for the Q/As)
-* github.com account
-* go:latest
-* docker:latest
-* MS Visual Studio Code:latest with Extensions:
-  * Go,
-  * Docker,
-  * VS Live Share Plugin
+* [github.com](github.com) account
+* [go:latest](https://golang.org/dl/)
+* [docker:latest](https://docs.docker.com/)
+* [MS Visual Studio Code:latest](https://code.visualstudio.com/) with Extensions:
+  * [Go](https://marketplace.visualstudio.com/items?itemName=ms-vscode.Go),
+  * [Docker](https://marketplace.visualstudio.com/items?itemName=PeterJausovec.vscode-docker),
+  * [VS Live Share Plugin](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare)
 
 ## 1. Week: Start with the Basics
 
-Lets start with [https://golang.org/](https://golang.org/) and learn the basics.  
-A must have here are 
+**Goal:** 
+* to be able to read and write go code
+* understand concepts/ideas and best practices of go
+* to write and run unit, integration, benchmark tests
+
+**Path:**
+
+lets start with [https://golang.org/](https://golang.org/) and learn the basics.  
+a must have here are 
 * [Getting Started](https://golang.org/doc/install)
 * [A Tour of Go](https://tour.golang.org/welcome/1)
 * [How to write Go code](https://golang.org/doc/code.html)
