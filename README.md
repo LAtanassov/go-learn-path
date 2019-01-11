@@ -86,11 +86,11 @@ Implement another transportation layer usign [grpc](https://grpc.io/) and [proto
 
 ## 3. Week: Managing entities with sql
 
-Start with reading about [go-database-sql.org](http://go-database-sql.org/), [docs.docker.com/](https://docs.docker.com/) and how to run the <database of your choice> in docker. Read and try out [flywaydb.org/](https://flywaydb.org/) to create version controlled database schemas.
+Start with reading about [go-database-sql.org](http://go-database-sql.org/), [docs.docker.com/](https://docs.docker.com/) and how to run the \<database of your choice\> in docker. Read and try out [flywaydb.org/](https://flywaydb.org/) to create version controlled database schemas.
  
  ### Exercise 3.1: Build a database layer and manage your domain entities
  
- Implement a basic CRUD database layer using the <database of your choice>  running in docker. Write unit/integration/benchmark test cases using [https://golang.org/pkg/testing/](https://golang.org/pkg/testing/).
+ Implement a basic CRUD database layer using the \<database of your choice\>  running in docker. Write unit/integration/benchmark test cases using [https://golang.org/pkg/testing/](https://golang.org/pkg/testing/).
  
  
 ### (Optional) Exercise 3.2: Implement Stress Benchmark Tests
