@@ -86,12 +86,11 @@ Implement another transportation layer usign [grpc](https://grpc.io/) and [proto
 
 ## 3. Week: Managing entities with sql
 
-Start with reading about [go-database-sql.org](http://go-database-sql.org/), [docs.docker.com/](https://docs.docker.com/) and how to run the \<database of your choice\> in docker. Read and try out [flywaydb.org/](https://flywaydb.org/) to create version controlled database schemas.
+Start with reading about [go-database-sql.org](http://go-database-sql.org/) and [docs.docker.com/](https://docs.docker.com/). For this exercise we will use [mysql](https://www.mysql.com) and [run it in a docker container](https://hub.docker.com/_/mysql). Advanced students can also checkout [flywaydb.org/](https://flywaydb.org/) to create version controlled database schemas.
  
  ### Exercise 3.1: Build a database layer and manage your domain entities
  
- Implement a basic CRUD database layer using the \<database of your choice\>  running in docker. Write unit/integration/benchmark test cases using [https://golang.org/pkg/testing/](https://golang.org/pkg/testing/).
- 
+Implement a basic CRUD database layer using mysql running in docker container. Write unit/integration/benchmark test cases using [https://golang.org/pkg/testing/](https://golang.org/pkg/testing/).
  
 ### (Optional) Exercise 3.2: Implement Stress Benchmark Tests
 
@@ -99,9 +98,9 @@ Implement a benchmark test suite and measure your performance bottle necks. How 
 
 ## 4. Week: Publish/Subscribe on a message queue
 
-TBD
+For this last exercise we will use [rabbitmq](https://www.rabbitmq.com/) to exercise to publish/subscribe on a message queue. Why rabbitmq - it is easy to [run it in docker](https://hub.docker.com/_/rabbitmq/) and the go library to connect to rabbitmq is simle and intuitiv. Checkout the rabbitmq [documentation](https://www.rabbitmq.com/tutorials/tutorial-one-go.html)
 
-# Where to go from here on
+## Where to go from here on
 
 Recommendations - for advanced Gophers:
 * [Concurrency in Go](http://shop.oreilly.com/product/0636920046189.do)
